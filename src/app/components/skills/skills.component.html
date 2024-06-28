@@ -1,0 +1,26 @@
+<section class="skills">
+    <app-fillet></app-fillet>
+    <div class="skills__myskills">
+        <h2>Minhas Skills</h2>
+        <section class="skills__myskills__desc">
+            <div class="skills__myskills__desc__left">
+                <h3>LINGUAGEM E FRAMEWORK</h3>
+                @for(ligs of linguagemSkills; track ligs.id){
+                    <div class="skills__myskills__desc__left__icons">
+                        <img class="skills__myskills__desc__left__icons__imgLeft" src="{{ligs.img}}" alt="{{ligs.description}}">
+                        <p>{{ligs.description}}</p>
+                    </div>
+                }
+            </div>
+            <div class="skills__myskills__desc__right">
+                <h3>SOFTWARE</h3>
+                @for(soft of softwareSkills; track soft.id){
+                    <div class="skills__myskills__desc__right__icons">
+                        <img class="skills__myskills__desc__right__icons__imgLeft" src="{{soft.img}}" alt="{{soft.description}}">
+                        <p>{{soft.description}}</p>
+                    </div>
+                }
+            </div>
+        </section>
+    </div>
+</section>

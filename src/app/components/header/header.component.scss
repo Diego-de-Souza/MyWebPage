@@ -1,0 +1,140 @@
+$colorVerde:#00ff00;
+$colorRoxo: #8911BA;
+$colorOuro: #FFD700;
+.header-fixo{
+    background-color: #282f3f;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    transition: 2s;
+
+    .header-fixo__container-logo{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 1em 0px 2em 0px;
+
+        &:hover{
+            animation-name: giro-constante;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes giro-constante {
+            0%{
+                transform: rotateZ(0deg);
+            }
+            25%{
+                transform: rotateZ(90deg);
+            }
+            50% {
+                transform: rotateZ(180deg);
+            }
+            75%{
+                transform: rotateZ(270deg);
+            }
+            100%{
+                transform: rotateZ(360deg);
+            }
+        }
+        
+    }
+
+    #link-pages{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+
+        .link-pages__li{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0.5em 0px 0.5em 1em;
+            cursor: pointer;
+
+            .link-pages__circle-icon-header{
+                display: block;
+                width: 32px;
+                height: 32px;
+                  
+        
+                .link-pages__li__img{
+                    display: block;
+                    width: 31px;
+                    height: 31px;
+                    overflow: hidden;
+                    border-radius: 50%;
+                }
+            }
+
+            .link-pages__li__description{
+                margin-left: 1em;
+            }
+
+            &:hover{
+                background-color: #ffffff5a;
+            }
+        }
+    }
+
+    .demiter{
+        display: block;
+        width: 90%;
+        border: 0.5px solid $colorVerde;
+        box-shadow: 1px 1px 4px $colorVerde;
+        margin: 0em auto 2em auto;
+    }
+    
+    #link-user{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        margin: 0px;
+
+        .link-user__redes{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0.5em 0px 0.5em 1em;
+
+            .link-user__redes__link{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                text-decoration: none;
+                color: #fff;
+                height: 32px;
+                width: 100%;
+
+                .link-user__redes__icon{
+                    width: 32px;
+                    box-shadow: 0px 0px 4px $colorVerde;
+                    border-radius: 50%;
+                }
+
+                .link-pages__li__description{
+                    margin-left: 1em;
+                    height: 1em;
+                    width: 100%;
+                }
+            }
+            
+            &:hover{
+                background-color: #ffffff5a;
+            }
+            
+        }
+
+    }
+
+    .header-fixo__date{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+}

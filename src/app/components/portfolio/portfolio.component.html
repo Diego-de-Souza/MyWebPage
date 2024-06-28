@@ -1,0 +1,30 @@
+<section class="education">
+    <section class="education__container">
+        <h2>Meu Portifolio</h2>
+        <nav class="education__container__menu">
+            <ul>
+                <li class="education__container__menu__li">WEB</li>
+                <li class="education__container__menu__li">BANCO DE DADOS</li>
+            </ul>
+        </nav>
+        <div class="education__container__dados">
+             @for(dadoWeb of dadosPortfolioWeb;track dadoWeb.id){
+                <img class="education__container__dados__img" src="" alt="">
+                <div>
+                    <h2>nome do projeto: {{dadoWeb.name}}</h2>
+                    <div>
+                        <h3>Linguagens usadas:</h3>
+                        <div *ngFor="let ling of dadoWeb.languages; let j = index">
+                            <p>{{ling}}</p>
+                        </div>
+                    </div>
+                    <a href="dadoWeb.url_git">Repositório no GitHub</a>
+                    <a href="dadoWeb.url_web">Click e veja</a>
+                </div>
+            }
+        </div>
+        <div class="education__container__dados">
+            
+        </div>
+    </section>
+</section>

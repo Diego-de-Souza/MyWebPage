@@ -1,0 +1,44 @@
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .education__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        h2{
+            padding: 1em 0;
+        }
+
+        .education__container__menu{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            justify-content: center;
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                border-radius: 15% 15% 0 0;
+
+                background-color: brown;
+                li{
+                    text-decoration: none;
+                    list-style-type: none;
+                    padding: 1em 2em;
+                    width: 50%;
+                    text-align: center;
+                }
+            }
+        }
+
+        .education__container__dados{
+
+        }
+    }
+}
