@@ -1,0 +1,20 @@
+<section class="certificate-home">
+    <h2>Certificados</h2>
+    <section class="certificate-home__content">
+        <h3>Geral</h3>
+        @for(dadoGeral of dadosCertGeral; track dadoGeral.id){
+            <div>{{dadoGeral.formation}}</div>
+        }
+        <h3>Tecnologia</h3>
+        <div class="certificate-home__content__tec">
+            <h4>Front</h4>
+            @for(dadoFront of dadosCertFront; track dadoFront.id){
+                <div>{{dadoFront.formation}}</div>
+            }
+            <h4>Back</h4>
+            @for(dadoBack of dadosCertBack; track dadoBack.id){
+                <div>{{dadoBack.formation}}</div>
+            }
+        </div>
+    </section>
+</section>

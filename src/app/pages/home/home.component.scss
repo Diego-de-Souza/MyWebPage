@@ -1,6 +1,12 @@
 #container-home{
     display: flex;
-    padding-left: 4em;
     width: 100%;
     flex-direction: column;
+
+    .body_home{
+        display: flex;
+        flex-direction: column;
+        margin-left: 4em;
+    }
 }
+

@@ -1,0 +1,65 @@
+<form [formGroup]="contatoForm" (ngSubmit)="onSubmit()" class="contactForm">
+  <div [ngClass]="{'valid': contatoForm.controls['nome'].valid && contatoForm.controls['nome'].touched, 'invalid': contatoForm.controls['nome'].invalid && contatoForm.controls['nome'].touched}" class="contactForm__content">
+    <label for="nome">Nome Completo* </label>
+    <div class="contactForm__content__input">
+      <i class="far fa-user contactForm__content__input__icon col-sm-1"></i>
+      <input id="nome" formControlName="nome" type="text" required placeholder="Nome completo" class="col-sm-11">
+    </div>
+    <div *ngIf="contatoForm.controls['nome'].invalid && contatoForm.controls['nome'].touched">
+      <small *ngIf="contatoForm.controls['nome'].errors?.['required']">Nome é obrigatório.</small>
+    </div>
+  </div>
+
+  <div [ngClass]="{'valid': contatoForm.controls['email'].valid && contatoForm.controls['email'].touched, 'invalid': contatoForm.controls['email'].invalid && contatoForm.controls['email'].touched}" class="contactForm__content">
+    <label for="email">Email* </label>
+    <div class="contactForm__content__input">
+      <i class="far fa-envelope contactForm__content__input__icon col-sm-1"></i>
+      <input id="email" formControlName="email" type="email" required placeholder="exemplo@exemplo.com.br" class="col-sm-11">
+    </div>
+    <div *ngIf="contatoForm.controls['email'].invalid && contatoForm.controls['email'].touched">
+      <small *ngIf="contatoForm.controls['email'].errors?.['required']">Email é obrigatório.</small>
+      <small *ngIf="contatoForm.controls['email'].errors?.['email']">Email inválido.</small>
+    </div>
+  </div>
+
+  <div [ngClass]="{'valid': contatoForm.controls['telefone'].valid && contatoForm.controls['telefone'].touched, 'invalid': contatoForm.controls['telefone'].invalid && contatoForm.controls['telefone'].touched}" class="contactForm__content">
+    <label for="telefone">Telefone* </label>
+    <div class="contactForm__content__input">
+      <i class="fas fa-mobile-alt contactForm__content__input__icon col-sm-1"></i>
+      <input id="telefone" formControlName="telefone" type="text" required placeholder="11+99999-9999" class="col-sm-11">
+    </div>
+    <div *ngIf="contatoForm.controls['telefone'].invalid && contatoForm.controls['telefone'].touched">
+      <small *ngIf="contatoForm.controls['telefone'].errors?.['required']">Telefone é obrigatório.</small>
+    </div>
+  </div>
+
+  <div [ngClass]="{'valid': contatoForm.controls['tipo'].valid && contatoForm.controls['tipo'].touched, 'invalid': contatoForm.controls['tipo'].invalid && contatoForm.controls['tipo'].touched}" class="contactForm__content">
+    <label for="tipo">Tipo de Contato*</label>
+    <div class="contactForm__content__input">
+      <i class="far fa-filter contactForm__content__input__icon col-sm-1"></i>
+      <select id="tipo" formControlName="tipo" required class="col-sm-11">
+        <option value="" disabled>Escolha um tipo de contato</option>
+        <option value="elogio">Elogio</option>
+        <option value="proposta">Proposta</option>
+        <option value="orcamento">Orçamento</option>
+        <option value="curiosidade">Curiosidade</option>
+      </select>
+    </div>
+    <div *ngIf="contatoForm.controls['tipo'].invalid && contatoForm.controls['tipo'].touched">
+      <small *ngIf="contatoForm.controls['tipo'].errors?.['required']">Tipo de contato é obrigatório.</small>
+    </div>
+  </div>
+
+  <div [ngClass]="{'valid': contatoForm.controls['mensagem'].valid && contatoForm.controls['mensagem'].touched, 'invalid': contatoForm.controls['mensagem'].invalid && contatoForm.controls['mensagem'].touched}" class="contactForm__content">
+    <label for="mensagem">Mensagem*</label>
+    <div class="contactForm__content__input">
+      <i class="far fa-sticky-note contactForm__content__input__icon col-sm-1 contactForm__content__input__icon__texteArea"></i>
+      <textarea id="mensagem" formControlName="mensagem" required placeholder="Digite aqui sua mensagem" class="col-sm-11"></textarea>
+    </div>
+    <div *ngIf="contatoForm.controls['mensagem'].invalid && contatoForm.controls['mensagem'].touched">
+      <small *ngIf="contatoForm.controls['mensagem'].errors?.['required']">Mensagem é obrigatória.</small>
+    </div>
+  </div>
+
+  <button type="submit" class="contactForm__content__btn --bs-info">Enviar</button>
+</form>

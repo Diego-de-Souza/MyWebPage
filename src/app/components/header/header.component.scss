@@ -8,6 +8,7 @@ $colorOuro: #FFD700;
     position: fixed;
     overflow: hidden;
     transition: 2s;
+    z-index: 10000;
 
     .header-fixo__container-logo{
         display: flex;

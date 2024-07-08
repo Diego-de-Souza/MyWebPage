@@ -37,7 +37,9 @@ $diego-dev-theme: mat.define-theme((
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+@import "@fortawesome/fontawesome-free/css/all.css"; // Importar todos os ícones
 
 *{
     margin: 0px;
@@ -49,3 +51,4 @@ body{
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

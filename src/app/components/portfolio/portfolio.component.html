@@ -9,17 +9,37 @@
         </nav>
         <div class="education__container__dados">
              @for(dadoWeb of dadosPortfolioWeb;track dadoWeb.id){
-                <img class="education__container__dados__img" src="" alt="">
-                <div>
-                    <h2>nome do projeto: {{dadoWeb.name}}</h2>
-                    <div>
-                        <h3>Linguagens usadas:</h3>
-                        <div *ngFor="let ling of dadoWeb.languages; let j = index">
-                            <p>{{ling}}</p>
+                <div class="education__container__dados__card">
+                    <div class="intermed">
+                        <div class="intermed-front">
+                            <img class="education__container__dados__img" src="../../../assets/imgs/homePage/banner/selfie_22102023.png" alt="">
                         </div>
+                        <div class="intermed-back">
+                            <h3>nome do projeto: {{dadoWeb.name}}</h3>
+                            <div class="education__container__dados__card__conteudo">
+                                <p>Linguagens usadas:</p>
+                                <div class="education__container__dados__card__conteudo_lang">
+                                    <div class="education__container__dados__card__conteudo_lang__cont" *ngFor="let ling of dadoWeb.languages; let j = index">
+                                        <p class="education__container__dados__card__conteudo_lang__cont__p">{{ling}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>                       
+                    <div class="education__container__dados__card__footer">
+                        <button class="education__container__dados__card__footer__btn">
+                            <a href="{{dadoWeb.url_git}}"
+                                target="_blank">
+                                Repositório no GitHub
+                            </a>
+                        </button>
+                        <button class="education__container__dados__card__footer__btn">
+                            <a href="{{dadoWeb.url_web}}" 
+                                target="_blank">
+                                Click e veja
+                            </a>
+                        </button>
                     </div>
-                    <a href="dadoWeb.url_git">Repositório no GitHub</a>
-                    <a href="dadoWeb.url_web">Click e veja</a>
+                </div>
                 </div>
             }
         </div>

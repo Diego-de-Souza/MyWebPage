@@ -14,7 +14,7 @@ export const portfolio=  [
                 id: 2,
                 url_git:'https://github.com/Diego-de-Souza/Curr-culo',
                 url_web:'',
-                languages: [ 'HTML'],
+                languages: [ 'HTML',' ', ' ', ' ', ' '],
                 name:'Curriculo',
                 img: '../../../assets/imgs/homePage/portfolio/'
             },

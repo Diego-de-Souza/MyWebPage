@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import {portfolio} from '../../data/portfolio_dados';
 import { GitModel } from '../../model/git-model';
 import { CommonModule } from '@angular/common';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatCardModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })

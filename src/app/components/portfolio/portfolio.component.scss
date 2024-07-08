@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    background-color: #282f3f;
 
     .education__container{
         display: flex;
@@ -23,22 +24,137 @@
             ul{
                 display: flex;
                 flex-direction: row;
+                justify-content: space-between;
                 width: 100%;
-                border-radius: 15% 15% 0 0;
-
-                background-color: brown;
+                padding: 0;
+                margin: 0;
+                
                 li{
                     text-decoration: none;
                     list-style-type: none;
                     padding: 1em 2em;
-                    width: 50%;
+                    width: 49%;
                     text-align: center;
+                    border-radius: 15% 15% 0 0;
+                    background-color: brown;
                 }
             }
         }
 
         .education__container__dados{
+            display: flex;
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: space-between;
 
+            .education__container__dados__card{
+                margin-left:1em;
+                margin-right: 1em;
+                justify-content: space-between;
+                width: 30%;
+                margin: 1em 6px;
+                
+                .intermed{
+                    display: flex;
+                    flex-direction: column;
+                    overflow: hidden;
+                    border-radius: 2em;
+                    animation: borderMovie 1s ease-in infinite;
+
+                    .education__container__dados__img{
+                        display: flex;
+                        height: 17em;
+                    }
+
+                    h3{
+                        display: none;
+                        font-size: 1em;
+                        padding: 1em 0 1em 1em ;
+                        margin-top: 2em;
+                        margin-bottom: 0;
+                    }
+    
+                    .education__container__dados__card__conteudo{
+                        display: none;
+                        flex-direction: row;
+                        height: 12em;
+                        padding-left: 1em;
+    
+                        .education__container__dados__card__conteudo_lang{
+                            display: flex;
+                            flex-direction: column;
+                            padding: 0.5em 1em 0 1em;
+    
+                            .education__container__dados__card__conteudo_lang__cont{
+                                display: flex;
+                                flex-direction: row;
+                                margin: 0;
+                                padding: 0;
+
+                                .education__container__dados__card__conteudo_lang__cont__p{
+                                    font-size: 0.7em;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                
+                // .intermed:hover{
+                    
+                //     .education__container__dados__img{
+                //         display: none;
+                //         transition-delay: 16s;
+                //     }
+
+                //     h3{
+                //         display: flex;
+                //         transition-delay: 16s;
+                //     }
+
+                //     .education__container__dados__card__conteudo{
+                //         display: flex;
+                //         transition-delay: 16s;
+                //     }
+                // }
+                
+
+                background-color: #fff;
+
+                .education__container__dados__card__footer{
+                    display: flex;
+                    flex-direction: column;width: 100%;
+                    margin: 0;
+                    bottom: 0px;
+    
+                    .education__container__dados__card__footer__btn{
+                        border-radius: 2em;
+                        width: 100%;
+                        margin-top: 0.5em;
+                        padding: 1em 0;
+                        bottom: 0px;
+                    }
+                }
+            }
+
+            
         }
+    }
+}
+@keyframes borderMovie {
+    0%{
+        box-shadow: 0px 0px 15px #00FF00;
+    }
+    25%{
+        box-shadow: 0px 0px 15px #41F2BA;
+    }
+    50%{
+        box-shadow: 0px 0px 15px #41F27D;
+    }
+    75%{
+        box-shadow: 0px 0px 15px #8BF241;
+    }
+    100%{
+        box-shadow: 0px 0px 15px #41EFF2;
     }
 }

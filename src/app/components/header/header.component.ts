@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WeatherComponent } from '../weather/weather.component';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-header',
@@ -16,7 +17,7 @@ export class HeaderComponent {
   dataEHora: Date = new Date();
   tipoData: string = '';
 
-  constructor(){
+  constructor(private router:Router){
 
   }
 
@@ -35,6 +36,14 @@ export class HeaderComponent {
     this.corBorda="#00ff00";
     this.corSombra = "#00ff00";
     this.tipoData = "";
+  }
+
+  openContato(){
+    this.router.navigate(['/contato'])
+  }
+  
+  openHome(){
+    this.router.navigate([''])
   }
 
 }

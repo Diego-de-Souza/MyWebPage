@@ -1,0 +1,38 @@
+.certificate-home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    h2{
+        width: 100%;
+        padding: 2em 0;
+        text-align: center;
+    }
+
+    .certificate-home__content{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+        h3{
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .certificate-home__content__tec{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            h4{
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+
+}

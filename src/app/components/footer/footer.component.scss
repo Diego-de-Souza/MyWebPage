@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .footer__title, .footer__declaration, .footer__rodape{
+        display: block;
+        width: 100%;
+        text-align: center; 
+    }
+
+    .footer__icons{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+}
