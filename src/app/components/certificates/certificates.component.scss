@@ -3,36 +3,77 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    background-image:url(../../../assets/imgs/homePage/certificate/Gemini_Generated_Image_tn62xdtn62xdtn62.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    color: #FFD700;
+    
+    .certificate-home__gradient-top {
+        display: flex;
+        width: 100%;
+        height: 8em;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #171b26 100%);
+    }
+
+    .certificate-home__gradient-bottom{
+        display: flex;
+        width: 100%;
+        height: 8em;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #171b26 100%);
+    }
 
     h2{
-        width: 100%;
-        padding: 2em 0;
+        width: 90%;
+        padding: 0.5em 0;
+        margin: 2em 0;
         text-align: center;
+        background-color: #171b2685;
     }
 
     .certificate-home__content{
         display: flex;
         flex-direction: column;
         width: 90%;
+        background-color: #171b2685;
 
         h3{
             display: block;
             width: 100%;
             text-align: center;
+            padding: 1em 0;
         }
 
-        .certificate-home__content__tec{
+        .certificate-home__content__itens{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             width: 100%;
+            align-items: center;
+            padding: 0.5em 0;
 
-            h4{
-                display: block;
-                width: 100%;
-                text-align: center;
+            .certificate-home__content__itens__desc{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .certificate-home__content__itens__btn{
+                align-items: center;
+                justify-content: center;
             }
         }
     }
 
-
+    .certificate-home__btn{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFD700;
+        color: #171b26;
+        cursor: pointer;
+        padding: 1em 0;
+    }
 }

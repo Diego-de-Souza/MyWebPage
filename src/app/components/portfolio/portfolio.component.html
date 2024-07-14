@@ -1,15 +1,15 @@
-<section class="education">
-    <section class="education__container">
+<section class="portfolio">
+    <section class="portfolio__container">
         <h2>Meu Portifolio</h2>
-        <nav class="education__container__menu">
+        <nav class="portfolio__container__menu">
             <ul>
-                <li class="education__container__menu__li">WEB</li>
-                <li class="education__container__menu__li">BANCO DE DADOS</li>
+                <li class="portfolio__container__menu__li" (click)="openPortfolio('front')">FRONT</li>
+                <li class="portfolio__container__menu__li" (click)="openPortfolio('back')">BACK</li>
             </ul>
         </nav>
-        <div class="education__container__dados">
-             @for(dadoWeb of dadosPortfolioWeb;track dadoWeb.id){
-                <div class="education__container__dados__card">
+        <div class="portfolio__container__dados">
+             @for(dadoWeb of dadosPortfolio;track dadoWeb.id){
+                <div class="portfolio__container__dados__card">
                     <div class="intermed">
                         <div class="intermed-front">
                             <img class="education__container__dados__img" src="../../../assets/imgs/homePage/banner/selfie_22102023.png" alt="">

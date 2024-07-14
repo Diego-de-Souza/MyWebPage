@@ -1,12 +1,30 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-article-mini',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './article-mini.component.html',
   styleUrl: './article-mini.component.scss'
 })
-export class ArticleMiniComponent {
+export class ArticleMiniComponent implements OnInit{
+  @Input() urlImagem!:string;
+  @Input() titleAbout!:string;
+  @Input() texto!:string;
+  @Input() altura!:string;
+  @Input() largura!:string;
+  @Input() opacidade!: string;
+  
+  ngOnInit():void{
+
+    this.altura = '0';
+    this.largura = '0';
+    this.opacidade = '0';
+
+    console.log(this.urlImagem)
+  }
+
 
 }

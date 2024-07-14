@@ -12,20 +12,30 @@ import {MatCardModule} from '@angular/material/card';
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent implements OnInit{
-  dadosPortfolioWeb:GitModel[]= [];
-  dadosPortfolioBanco:GitModel[]=[];
+  dadosPortfolio: GitModel[]=[];
 
   constructor(){}
 
   ngOnInit(){
-    this.dadosPortfolioWeb = portfolio
+    this.dadosPortfolio = portfolio
       .filter((dados: any)=>dados.tipo === 'web')
       .map((dado: any) => dado.itens)
       .flat();
+      
+  }
 
-    this.dadosPortfolioBanco = portfolio
-      .filter((dados: any)=> dados.tipo === 'banco_de_dados')
-      .map((dado: any) => dado.item)
+  openPortfolio(tipo:string): void{
+    if(tipo === "front"){
+      this.dadosPortfolio = portfolio
+      .filter((dados: any)=>dados.tipo === 'web')
+      .map((dado: any) => dado.itens)
       .flat();
+    }
+    if(tipo === "back"){
+      this.dadosPortfolio = portfolio
+      .filter((dados: any)=> dados.tipo === 'banco_de_dados')
+      .map((dado: any) => dado.itens)
+      .flat();
+    }
   }
 }

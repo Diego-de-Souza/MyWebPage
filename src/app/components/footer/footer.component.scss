@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 2em 0;
+    padding-left: 4em;
 
     .footer__title, .footer__declaration, .footer__rodape{
         display: block;
@@ -9,11 +11,32 @@
         text-align: center; 
     }
 
+    .footer__title{
+        font-size: 2em;
+        padding: 2em 0;
+        color: #8911BA;
+    }
+
+    .footer__declaration{
+        padding-top: 3em;
+        color: #FFD700;
+    }
+
+    .footer__rodape{
+        padding-bottom: 2em;
+        color: #FFD700;
+    }
+
     .footer__icons{
         display: flex;
         flex-direction: row;
         width: 100%;
-        justify-content: space-around;
+        justify-content: center;
+    }
+
+    .footer__icons > a > img{
+        width: 32px;
+        margin: 0 1em;
     }
 
 }

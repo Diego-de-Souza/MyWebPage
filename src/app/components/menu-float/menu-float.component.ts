@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import {FontAwesomeModule, FaIconLibrary} from '@fortawesome/angular-fontawesome';
 
@@ -10,4 +11,9 @@ import {FontAwesomeModule, FaIconLibrary} from '@fortawesome/angular-fontawesome
 })
 export class MenuFloatComponent {
   
+  constructor(private viewportScroller: ViewportScroller){}
+
+  scrollToSection(sectionId: string): void {
+    this.viewportScroller.scrollToAnchor(sectionId);
+  }
 }

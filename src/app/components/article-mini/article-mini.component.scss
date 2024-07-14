@@ -35,9 +35,8 @@
         
                 .articleMini__description__ct__borde__img{
                     display: flex;
-                    width: 20em;
-                    height: 15em;
                     margin: -2em 0px 0px -2em;
+                    transition: opacidade 2s ease, width 2s ease, heigth 2s ease;
                 }
             }
         }

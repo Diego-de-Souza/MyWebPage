@@ -1,10 +1,39 @@
 <section>
-    <div class="header-about">
-        <app-fillet></app-fillet>
-    </div>
     <div>
-        <app-article-mini></app-article-mini>
-        <app-article-mini></app-article-mini>
-        <app-article-mini></app-article-mini>
+        <app-article-mini
+        appIntersectionObserver
+        (isIntersecting)="openImage1($event)"
+        [margemRaiz]="'100px'"
+        [limite]="[0.5]"
+        [altura]="altura1"
+        [largura]="largura1"
+        [opacidade]="opacidade1"
+        [urlImagem]="dadosAbout1.urlImage"
+        [titleAbout]="dadosAbout1.title"
+        [texto]="dadosAbout1.text"></app-article-mini>
+        <app-article-mini
+        appIntersectionObserver
+        (isIntersecting)="openImage2($event)"
+        [margemRaiz]="'10px'"
+        [limite]="[0.5]"
+        [altura]="altura2"
+        [largura]="largura2"
+        [opacidade]="opacidade2"
+        [urlImagem]="dadosAbout2.urlImage"
+        [titleAbout]="dadosAbout2.title"
+        [texto]="dadosAbout2.text"
+        ></app-article-mini>
+        <app-article-mini
+        appIntersectionObserver
+        (isIntersecting)="openImage3($event)"
+        [margemRaiz]="'10px'"
+        [limite]="[0.5]"
+        [altura]="altura3"
+        [largura]="largura3"
+        [opacidade]="opacidade3"
+        [urlImagem]="dadosAbout3.urlImage"
+        [titleAbout]="dadosAbout3.title"
+        [texto]="dadosAbout3.text"></app-article-mini>
     </div>
+    <div class="about__gradient-bottom"></div>
 </section>

@@ -1,20 +1,24 @@
 <section class="menu-float">
     <menu class="menu-float__menu">
         <ul class="menu-float__menu__ul">
-            <li class="menu-float__menu__ul__li">
+            <li class="menu-float__menu__ul__li" (click)="scrollToSection('about')">
                 <p>Minha Jornada</p>
                 <i class="fa-regular fa-address-card"></i>
             </li>
-            <li class="menu-float__menu__ul__li">
+            <li class="menu-float__menu__ul__li" (click)="scrollToSection('skill')">
                 <p>Skills</p>
                 <i class="fa-regular fa-lightbulb"></i>
             </li>
-            <li class="menu-float__menu__ul__li">
-                <p>Certificate</p>
+            <li class="menu-float__menu__ul__li" (click)="scrollToSection('education')">
+                <p>Education</p>
+                <i class="fas fa-university"></i>
+            </li>
+            <li class="menu-float__menu__ul__li" (click)="scrollToSection('portfolio')">
+                <p>Portfolio</p>
                 <i class="fa-regular fa-newspaper"></i>
             </li>
-            <li class="menu-float__menu__ul__li">
-                <p>Portfolio</p>
+            <li class="menu-float__menu__ul__li" (click)="scrollToSection('certificate')">
+                <p>Certificados</p>
                 <i class="fa-regular fa-folder"></i>
             </li>
         </ul>

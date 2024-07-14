@@ -1,20 +1,21 @@
 <section class="certificate-home">
+    <div class="certificate-home__gradient-top"></div>
     <h2>Certificados</h2>
     <section class="certificate-home__content">
         <h3>Geral</h3>
         @for(dadoGeral of dadosCertGeral; track dadoGeral.id){
-            <div>{{dadoGeral.formation}}</div>
+            <div class="certificate-home__content__itens row">
+                <div class="certificate-home__content__itens__desc col-sm-8">
+                    <h4>{{dadoGeral.formation}}</h4>
+                    <p>data conlusão: {{dadoGeral.data_conclusao}}</p>
+                    <p>carga horária: {{dadoGeral.carga_horaria}}</p>
+                </div>
+                <div class="col-sm-4 certificate-home__content__itens__btn">
+                    <button mat-button (click)="openDialog(dadoGeral.formation)">Abrir Imagem</button>
+                </div>
+            </div>
         }
-        <h3>Tecnologia</h3>
-        <div class="certificate-home__content__tec">
-            <h4>Front</h4>
-            @for(dadoFront of dadosCertFront; track dadoFront.id){
-                <div>{{dadoFront.formation}}</div>
-            }
-            <h4>Back</h4>
-            @for(dadoBack of dadosCertBack; track dadoBack.id){
-                <div>{{dadoBack.formation}}</div>
-            }
-        </div>
     </section>
+    <div class="certificate-home__btn" (click)="openMore()">{{menuCertificados}}</div>
+    <div class="certificate-home__gradient-bottom"></div>
 </section>

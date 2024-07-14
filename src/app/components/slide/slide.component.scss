@@ -2,9 +2,13 @@
     display: flex;
     background-color: #171b26;
     width: 100% !important;
-    height: 80vh;
+    height: 100vh;
     color: #d9c49c;
     align-items: center;
+    background-image: linear-gradient(to bottom, #171b26ac 0%, #171b2620 50%, #171b26 100%),
+    url(../../../assets/imgs/homePage/banner/pexels-pixabay-33334.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
 
     .row{
         width: 100%;
@@ -19,9 +23,7 @@
             position: absolute;
             z-index: 1000;
         }
-        .text_slide1{
-            font-size: 2.5em;
-        }
+        
         .quote{
             font-size: 0.8em;
         }

@@ -11,9 +11,17 @@ $colorMarinho: #171B26;
     color: #d9c49c;
     background-image: url(../../../assets/imgs/homePage/education/nasa-Q1p7bh3SHj8-unsplash.jpg);
     background-attachment: fixed;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: none;
     background-size: cover;
+
+    .education__gradient-top {
+      display: flex;
+      width: 100%;
+      height: 8em;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #00ff00 100%);
+    }
+
 
     .education__main{
         display: flex;
@@ -41,6 +49,21 @@ $colorMarinho: #171B26;
             }
         }
     }
+}
+
+.visibilityChild {
+  animation: childVisibility 3s ease-in-out;
+}
+
+@keyframes childVisibility {
+  0%{
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @function multiple-box-shadow ($n) {

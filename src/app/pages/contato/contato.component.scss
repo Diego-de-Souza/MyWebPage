@@ -1,0 +1,62 @@
+.container-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4em;
+    padding-bottom: 4em;
+}
+
+.container-contato__texto{
+    display: flex;
+    width: 80%;
+    padding: 4em 0;
+    color: #FFD700;
+    text-align: justify;
+}
+
+.txt_1{
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 2s forwards;
+}
+.txt_1:nth-child(1){
+    animation-delay: 0s;
+}
+.txt_1:nth-child(2){
+    animation-delay: 1s;
+}
+.txt_1:nth-child(3){
+    animation-delay: 2s;
+}
+.txt_1:nth-child(4){
+    animation-delay: 3s;
+}
+.txt_1:nth-child(5){
+    animation-delay: 4s;
+}
+.txt_1:nth-child(6){
+    animation-delay: 5s;
+}
+.txt_1:nth-child(7){
+    animation-delay: 6s;
+}
+
+.container-contato__texto__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-contato__formulario{
+    width: 80%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
