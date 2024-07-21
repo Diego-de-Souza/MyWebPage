@@ -10,7 +10,7 @@ import {IntersectionObserverDirective} from '../../directive/intersection-observ
     IntersectionObserverDirective
   ],
   templateUrl: './skills.component.html',
-  styleUrl: './skills.component.scss'
+  styleUrls: ['./skills.component.scss', './skills-responsive.component.scss']
 })
 export class SkillsComponent{
  linguagemSkills:any = [];

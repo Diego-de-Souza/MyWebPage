@@ -46,7 +46,7 @@ export class CertificatesComponent implements OnInit{
       .filter((itens:any)=> itens.tipo === 'geral')
       .map((item:any)=> item.itens)
       .flat()
-      .slice(0, 10);
+      .slice(0, 5);
 
       this.menuCertificados = 'Clique para mais';
     }

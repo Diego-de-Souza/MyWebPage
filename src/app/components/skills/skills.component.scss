@@ -66,8 +66,6 @@ $colorMarinho: #171B26;
                     }
 
                     p{
-                        color: $colorOuro;
-                        font-size: 2em;
                         margin: 0px 2em 0px 0px;
                     }
                 }
@@ -127,8 +125,6 @@ $colorMarinho: #171B26;
                     }
 
                     p{
-                        color: $colorOuro;
-                        font-size: 2em;
                         margin: 0px 0px 0px 2em;
                     }
                 }
@@ -190,4 +186,9 @@ $colorMarinho: #171B26;
       opacity: 1;
       transform: translateX(0);
     }
-  }
+}
+
+p{
+    color: $colorOuro;
+    font-size: 2em;
+}

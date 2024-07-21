@@ -12,7 +12,6 @@ import {IntersectionObserverDirective} from '../../directive/intersection-observ
 export class EducationComponent {
 
   openEducation(isIntersecting: Boolean):void {
-    console.log('Element is intersecting:', isIntersecting);
     if(isIntersecting){
       document.querySelectorAll('.education__main__content__child').forEach(filho =>{
         filho.classList.add('visibilityChild')
@@ -25,7 +24,6 @@ export class EducationComponent {
   }
 
   openEducation2(isIntersecting: Boolean):void {
-    console.log('Element is intersecting:', isIntersecting);
     if(isIntersecting){
       document.querySelectorAll('.education__main__content__child2').forEach(filho =>{
         filho.classList.add('visibilityChild')

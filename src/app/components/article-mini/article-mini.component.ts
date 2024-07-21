@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './article-mini.component.html',
-  styleUrl: './article-mini.component.scss'
+  styleUrls: ['./article-mini.component.scss', './article-mini-responsive.component.scss']
 })
 export class ArticleMiniComponent implements OnInit{
   @Input() urlImagem!:string;
@@ -22,8 +22,6 @@ export class ArticleMiniComponent implements OnInit{
     this.altura = '0';
     this.largura = '0';
     this.opacidade = '0';
-
-    console.log(this.urlImagem)
   }
 
 

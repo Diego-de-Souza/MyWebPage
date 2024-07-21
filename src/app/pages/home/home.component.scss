@@ -2,11 +2,13 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-
-    .body_home{
-        display: flex;
-        flex-direction: column;
-        margin-left: 4em;
-    }
+}
+.body_home{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4em;
 }
 
+.header-reponsive{
+    display: none;
+}

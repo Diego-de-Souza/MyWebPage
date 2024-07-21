@@ -1,6 +1,6 @@
 <div>
     @if(menuAberto == 'true'){
-        <div class="horizontal-date">
+        <div class="horizontal-date" [ngStyle]="menuFloat === 'true'? getStyle(): null">
             {{spanData}}
         </div>
         <div>

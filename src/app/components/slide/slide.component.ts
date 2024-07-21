@@ -9,7 +9,7 @@ import { RotatingLogoComponent } from '../rotating-logo/rotating-logo.component'
       RotatingLogoComponent
   ],
   templateUrl: './slide.component.html',
-  styleUrl: './slide.component.scss'
+  styleUrls: ['./slide.component.scss', './slide-responsive.component.scss']
 })
 export class SlideComponent {
 

@@ -52,3 +52,18 @@ body{
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+
+body::-webkit-scrollbar {
+  width: 16px; 
+}
+
+body::-webkit-scrollbar-track {
+  background: #171b26;  
+  border: 1px solid #00ff00; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFD700;
+  border-radius: 20px; 
+}
+

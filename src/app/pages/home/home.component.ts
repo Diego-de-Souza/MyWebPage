@@ -8,6 +8,7 @@ import { CertificatesComponent } from '../../components/certificates/certificate
 import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { MenuFloatComponent } from '../../components/menu-float/menu-float.component';
+import { HeaderResponsiveComponent } from '../../components/header-responsive/header-responsive.component';
 
 @Component({
   selector: 'app-home',
@@ -21,9 +22,10 @@ import { MenuFloatComponent } from '../../components/menu-float/menu-float.compo
     PortfolioComponent, 
     CertificatesComponent, 
     MenuFloatComponent,
-    FooterComponent],
+    FooterComponent,
+    HeaderResponsiveComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrls: ['./home.component.scss','./home-responsive.component.scss']
 })
 export class HomeComponent {
 

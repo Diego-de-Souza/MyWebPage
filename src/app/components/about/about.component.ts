@@ -28,28 +28,46 @@ export class AboutComponent implements OnInit {
   dadosAbout2!:any;
   dadosAbout3!:any;
 
+  larguraTela!: number;
+
   ngOnInit(): void {
     this.dadosAbout1 = about.filter(item => item.id === 1)[0];
     this.dadosAbout2 = about.filter(item => item.id === 2)[0];
     this.dadosAbout3 = about.filter(item => item.id === 3)[0];
   }
 
+  ngOnChanges():void{
+    this.larguraTela= window.innerWidth;
+  }
+
   openImage1(isIntersecting: Boolean):void{
+    
     if(isIntersecting){
-      this.altura1 = '15em';
+      if(this.larguraTela <= 1024){
+        this.altura1 = '10em';
+      this.largura1 = '15em';
+      }else{
+        this.altura1 = '15em';
       this.largura1 = '20em';
+      }
       this.opacidade1 = '1';
     }else{
       this.altura1 = '0';
       this.largura1 = '0';
       this.opacidade1 = '0';
     }
+    console.log(`Largura da tela: ${this.larguraTela} pixels`);
   }
 
   openImage2(isIntersecting: Boolean):void{
     if(isIntersecting){
-      this.altura2 = '15em';
-      this.largura2 = '20em';
+      if(this.larguraTela <= 1024){
+        this.altura1 = '10em';
+        this.largura1 = '15em';
+      }else{
+        this.altura2 = '15em';
+        this.largura2 = '20em';
+      }
       this.opacidade2 = '1';
     }else{
       this.altura2 = '0';
@@ -60,8 +78,13 @@ export class AboutComponent implements OnInit {
 
   openImage3(isIntersecting: Boolean):void{
     if(isIntersecting){
-      this.altura3 = '15em';
-      this.largura3 = '20em';
+      if(this.larguraTela <= 1024){
+        this.altura1 = '10em';
+        this.largura1 = '15em';
+      }else{
+        this.altura3 = '15em';
+        this.largura3 = '20em';
+      }
       this.opacidade3 = '1';
     }else{
       this.altura3 = '0';

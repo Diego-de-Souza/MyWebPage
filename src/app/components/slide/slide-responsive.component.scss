@@ -1,0 +1,32 @@
+
+@media screen and (max-width:1380px) {
+    .text-dev{
+        font-size: 6em;
+    }  
+    
+}
+
+@media screen and (max-width:1170px) {
+    .slide-abertura__tex{
+        margin: 0;
+    }
+    .text-dev{
+        font-size: 4em;
+    }
+    .slide-abertura__tex__text{
+        padding-top: 4em;
+    }  
+    p{font-size: 1.5em;}
+}
+
+@media screen and (max-width: 992px){
+    .row-container{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px){
+    p{
+        font-size: 1.2em;
+    }
+}
