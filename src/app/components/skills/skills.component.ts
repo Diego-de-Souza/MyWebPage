@@ -46,23 +46,16 @@ export class SkillsComponent{
         });
       }
     }else{
-      if (isIntersecting) {
-        this.sectionElement.nativeElement.classList.add('abraKadabra');
-        document.querySelectorAll('.skills__myskills__desc .skills__myskills__desc__left__icons ').forEach(filho => {
-          filho.classList.add('aparecer');
-        });
-        document.querySelectorAll('.skills__myskills__desc .skills__myskills__desc__right__icons ').forEach(filho => {
-          filho.classList.add('aparecer');
-        });
-      } else {
-        this.sectionElement.nativeElement.classList.remove('abraKadabra');
-        document.querySelectorAll('.skills__myskills__desc .skills__myskills__desc__left__icons').forEach(filho => {
-          filho.classList.remove('enaparecer');
-        });
-        document.querySelectorAll('.skills__myskills__desc .skills__myskills__desc__right__icons ').forEach(filho => {
-          filho.classList.remove('aparecer');
-        });
-      }
+      
+      this.sectionElement.nativeElement.classList.add('abraKadabra');
+      const elements = document.querySelectorAll('.skills__myskills__desc__left__icons, .skills__myskills__desc__right__icons');
+      elements.forEach(element => {
+          if (isIntersecting) {
+              element.classList.add('entradaAAparecer');
+          } else {
+              element.classList.remove('entradaAAparecer');
+          }
+      });
     }
     
  }
