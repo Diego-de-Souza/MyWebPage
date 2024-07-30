@@ -23,6 +23,7 @@ export class ArticleMiniComponent implements OnInit{
     this.largura = '0';
     this.opacidade = '0';
   }
+  
 
 
 }

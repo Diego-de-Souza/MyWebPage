@@ -15,7 +15,7 @@ import { DialogTemplateComponent } from '../../templates/dialog.template/dialog.
     MatButtonModule, 
     MatDialogModule],
   templateUrl: './certificates.component.html',
-  styleUrl: './certificates.component.scss',
+  styleUrls: ['./certificates.component.scss', './certificates-responsive.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CertificatesComponent implements OnInit{

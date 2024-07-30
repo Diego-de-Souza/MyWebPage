@@ -18,6 +18,8 @@ export class SkillsComponent{
 
  @ViewChild('sectionElement') sectionElement!: ElementRef;
 
+ larguraTela: number = window.innerWidth;
+
  ngOnInit(){
     this.linguagemSkills = skills.find(item => item.tipo === 'language')?.itens || [];
     this.softwareSkills = skills.find(item => item.tipo === 'software')?.itens || [];
@@ -25,23 +27,44 @@ export class SkillsComponent{
  }
 
  onIntersection(isIntersecting: boolean) {
-    if (isIntersecting) {
-      this.sectionElement.nativeElement.classList.add('abraKadabra');
-      document.querySelectorAll('.skills__myskills__desc .skills__myskills__desc__left__icons ').forEach(filho => {
-        filho.classList.add('entradaAEsquerda');
-      });
-      document.querySelectorAll('.skills__myskills__desc .skills__myskills__desc__right__icons ').forEach(filho => {
-        filho.classList.add('entradaADireita');
-      });
-    } else {
-      this.sectionElement.nativeElement.classList.remove('abraKadabra');
-      document.querySelectorAll('.skills__myskills__desc .skills__myskills__desc__left__icons').forEach(filho => {
-        filho.classList.remove('entradaAEsquerda');
-      });
-      document.querySelectorAll('.skills__myskills__desc .skills__myskills__desc__right__icons ').forEach(filho => {
-        filho.classList.remove('entradaADireita');
-      });
+    if(this.larguraTela >= 480){
+      if (isIntersecting) {
+        this.sectionElement.nativeElement.classList.add('abraKadabra');
+        document.querySelectorAll('.skills__myskills__desc .skills__myskills__desc__left__icons ').forEach(filho => {
+          filho.classList.add('entradaAEsquerda');
+        });
+        document.querySelectorAll('.skills__myskills__desc .skills__myskills__desc__right__icons ').forEach(filho => {
+          filho.classList.add('entradaADireita');
+        });
+      } else {
+        this.sectionElement.nativeElement.classList.remove('abraKadabra');
+        document.querySelectorAll('.skills__myskills__desc .skills__myskills__desc__left__icons').forEach(filho => {
+          filho.classList.remove('entradaAEsquerda');
+        });
+        document.querySelectorAll('.skills__myskills__desc .skills__myskills__desc__right__icons ').forEach(filho => {
+          filho.classList.remove('entradaADireita');
+        });
+      }
+    }else{
+      if (isIntersecting) {
+        this.sectionElement.nativeElement.classList.add('abraKadabra');
+        document.querySelectorAll('.skills__myskills__desc .skills__myskills__desc__left__icons ').forEach(filho => {
+          filho.classList.add('aparecer');
+        });
+        document.querySelectorAll('.skills__myskills__desc .skills__myskills__desc__right__icons ').forEach(filho => {
+          filho.classList.add('aparecer');
+        });
+      } else {
+        this.sectionElement.nativeElement.classList.remove('abraKadabra');
+        document.querySelectorAll('.skills__myskills__desc .skills__myskills__desc__left__icons').forEach(filho => {
+          filho.classList.remove('enaparecer');
+        });
+        document.querySelectorAll('.skills__myskills__desc .skills__myskills__desc__right__icons ').forEach(filho => {
+          filho.classList.remove('aparecer');
+        });
+      }
     }
+    
  }
 
 }

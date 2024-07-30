@@ -39,3 +39,24 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 480px){
+    .articleMini__description{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .articleMini__description__ct{
+        width: 100%;
+    }
+
+    .articleMini__description__ct__borde{
+        width: 15em;
+        height: 10em;
+    }
+
+    .articleMini__description_text{
+        width: 100%;
+    }
+}

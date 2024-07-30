@@ -7,7 +7,7 @@ import {IntersectionObserverDirective} from '../../directive/intersection-observ
   standalone: true,
   imports: [FilletComponent, IntersectionObserverDirective],
   templateUrl: './education.component.html',
-  styleUrl: './education.component.scss'
+  styleUrls: ['./education.component.scss','./education-responsive.component.scss']
 })
 export class EducationComponent {
 
