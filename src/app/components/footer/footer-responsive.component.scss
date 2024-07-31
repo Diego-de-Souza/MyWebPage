@@ -1,6 +1,20 @@
-@media screen and (max-wifth: 485px){
+@media screen and (max-width: 485px){
     .footer{
-        padding: 2em 1em 2em 1em;
+        padding: 2em 0;
+    }
+
+    .footer__title{
+        font-size: 1em;
+    }
+
+    .footer__declaration{
+        padding-top: 2em;
+        font-size: 0.7em;
+    }
+    
+    .footer__rodape{
+        padding-bottom: 1em;
+        font-size: 0.5em;
     }
 }
 

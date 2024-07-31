@@ -30,3 +30,13 @@
         font-size: 1.2em;
     }
 }
+
+@media screen and (max-width: 480px){
+    .text-dev{
+        font-size: 4em;
+    }  
+
+    .slide-abertura__tex{
+        padding: 0;
+    }
+}

@@ -4,25 +4,25 @@
     animation: deslocar 4s linear 1;
     right: 60%;    
     top: 55%;
+}
 
-    .rotatingLogo__img{
-        animation: girar 20s linear 1;
-        transition: ease;
-    }
+.rotatingLogo__img{
+    animation: girar 20s linear 1;
+    transition: ease;
+}
 
-    @keyframes deslocar{
-        0%{right: 0%; }
-        25%{right: 15%;}
-        50%{right: 30%;}
-        75%{right: 45%;}
-        100%{right: 60%;}
-    }
+@keyframes deslocar{
+    0%{right: 0%; }
+    25%{right: 15%;}
+    50%{right: 30%;}
+    75%{right: 45%;}
+    100%{right: 60%;}
+}
 
-    @keyframes girar{
-        0%{transform: rotateZ(360deg);}
-        25%{transform: rotateZ(170deg);}
-        50%{transform: rotateZ(180deg);}
-        75%{transform: rotateZ(90deg);}
-        100%{transform: rotateZ(0deg);}
-    }
+@keyframes girar{
+    0%{transform: rotateZ(360deg);}
+    25%{transform: rotateZ(170deg);}
+    50%{transform: rotateZ(180deg);}
+    75%{transform: rotateZ(90deg);}
+    100%{transform: rotateZ(0deg);}
 }

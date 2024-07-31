@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './rotating-logo.component.html',
-  styleUrl: './rotating-logo.component.scss'
+  styleUrls: ['./rotating-logo.component.scss','./rotating-logo-responsive.component.scss']
 })
 export class RotatingLogoComponent {
 
