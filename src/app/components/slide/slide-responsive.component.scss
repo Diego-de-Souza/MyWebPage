@@ -40,3 +40,12 @@
         padding: 0;
     }
 }
+
+@media screen and (max-width: 390px){
+    .text-dev{
+        font-size: 2em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+}
