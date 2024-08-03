@@ -8,15 +8,15 @@ export const portfolio=  [
                 url_web:'https://www.ctgranchodasaudade.com.br/#/',
                 languages: ['Angular','TypeScript', 'JavaScript', 'HTML', 'CSS'],
                 name:'ctg_webpage',
-                img: '../../../assets/imgs/homePage/portfolio/'
+                img: '../../../assets/imgs/homePage/portfolio/logo_ranchodasaudade.png'
             },
             {
                 id: 2,
                 url_git:'https://github.com/Diego-de-Souza/Curr-culo',
-                url_web:'',
+                url_web:'https://diego-de-souza.github.io/Curr-culo/',
                 languages: [ 'HTML',' ', ' ', ' ', ' '],
                 name:'Curriculo',
-                img: '../../../assets/imgs/homePage/portfolio/'
+                img: '../../../assets/imgs/homePage/portfolio/OJ8XXE0.jpg'
             },
             {
                 id: 3,
@@ -24,15 +24,15 @@ export const portfolio=  [
                 url_web: '',
                 languages: ['Angular','TypeScript', 'JavaScript', 'HTML', 'CSS'],
                 name:'angular-buzzfeed',
-                img: '../../../assets/imgs/homePage/portfolio/'
+                img: '../../../assets/imgs/homePage/portfolio/buzz_feed.jpg'
             },
             {
                 id: 4,
                 url_git:'https://github.com/Diego-de-Souza/angular-blog',
-                url_web: '',
+                url_web: 'https://diego-de-souza.github.io/angular-blog/',
                 languages: ['Angular','TypeScript', 'JavaScript', 'HTML', 'CSS'],
                 name:'angular-blog',
-                img: '../../../assets/imgs/homePage/portfolio/'
+                img: '../../../assets/imgs/homePage/portfolio/jujutsu-blog.jpg'
             },
             {
                 id: 5,
@@ -40,23 +40,23 @@ export const portfolio=  [
                 url_web: 'https://diego-de-souza.github.io/Avaliador-de-Herois/',
                 languages: ['JavaScript', 'HTML', 'CSS'],
                 name:'Avaliador-de-Herois',
-                img: '../../../assets/imgs/homePage/portfolio/'
+                img: '../../../assets/imgs/homePage/portfolio/platform_heroes.jpg'
             },
             {
                 id: 6,
-                url_git:'https://github.com/Diego-de-Souza/gdcaw_webpages',
-                url_web: 'https://diego-de-souza.github.io/gdcaw_webpages/',
+                url_git:'https://github.com/Diego-de-Souza/Projeto_Estacionamento',
+                url_web: 'https://diego-de-souza.github.io/Projeto_Estacionamento/',
                 languages: ['JavaScript', 'HTML', 'CSS'],
-                name:'Avaliador-de-Herois',
-                img: '../../../assets/imgs/homePage/portfolio/'
+                name:'Sistema de cadastro de veículos',
+                img: '../../../assets/imgs/homePage/portfolio/cadastro_veiculo.jpg'
             },
             {
                 id: 7,
                 url_git:'https://github.com/Diego-de-Souza/playstation_store_remaster',
                 url_web: 'https://diego-de-souza.github.io/playstation_store_remaster/playstation_store_remaster#/',
                 languages: ['JavaScript', 'HTML', 'CSS'],
-                name:'Avaliador-de-Herois',
-                img: '../../../assets/imgs/homePage/portfolio/'
+                name:'Remaster da Playstation Store',
+                img: '../../../assets/imgs/homePage/portfolio/playstation-remaster.jpg'
             },
             {
                 id: 8,
@@ -64,7 +64,7 @@ export const portfolio=  [
                 url_web: 'https://diego-de-souza.github.io/Tela-Instagram-recriado/',
                 languages: ['HTML', 'CSS'],
                 name:'Tela-Instagram-recriado',
-                img: '../../../assets/imgs/homePage/portfolio/'
+                img: '../../../assets/imgs/homePage/portfolio/instagram-remaster.jpg'
             },
             {
                 id: 9,
@@ -72,15 +72,7 @@ export const portfolio=  [
                 url_web: 'https://diego-de-souza.github.io/projeto-cordel/',
                 languages: ['HTML', 'CSS'],
                 name:'projeto-cordel',
-                img: '../../../assets/imgs/homePage/portfolio/'
-            },
-            {
-                id: 10,
-                url_git:'https://github.com/Diego-de-Souza/Projeto_Estacionamento',
-                url_web: 'https://diego-de-souza.github.io/Projeto_Estacionamento/',
-                languages: ['TypeScript', 'JavaScript', 'HTML', 'CSS'],
-                name:'projeto-cordel',
-                img: '../../../assets/imgs/homePage/portfolio/'
+                img: '../../../assets/imgs/homePage/portfolio/cordel.jpg'
             }
         ]
     },
@@ -90,42 +82,42 @@ export const portfolio=  [
             {
                 id: 1,
                 url_git:'https://github.com/Diego-de-Souza/Modelamento_ofina_mecanica',
-                url_web:'',
+                url_web:'https://github.com/Diego-de-Souza/Modelamento_ofina_mecanica',
                 languages: [],
                 name:'Modelagem de dados oficina mecânica',
-                img: '../../../assets/imgs/homePage/portfolio/'
+                img: '../../../assets/imgs/homePage/portfolio/mod_mec.jpg'
             },
             {
                 id: 2,
                 url_git:'https://github.com/Diego-de-Souza/Modelamento_e-commerce',
-                url_web:'',
+                url_web:'https://github.com/Diego-de-Souza/Modelamento_e-commerce',
                 languages: [],
                 name:'Modelagem de dados e-commerce',
-                img: '../../../assets/imgs/homePage/portfolio/'
+                img: '../../../assets/imgs/homePage/portfolio/mod_commerce.jpg'
             },
             {
                 id: 3,
                 url_git:'https://github.com/Diego-de-Souza/Banco_de_dados_ecommerce',
-                url_web:'',
+                url_web:'https://github.com/Diego-de-Souza/Banco_de_dados_ecommerce',
                 languages: ['SQL'],
                 name:'Banco de dados e-commerce',
-                img: '../../../assets/imgs/homePage/portfolio/'
+                img: '../../../assets/imgs/homePage/portfolio/banco_ecommerce.jpg'
             },
             {
                 id: 4,
                 url_git:'https://github.com/Diego-de-Souza/Banco-de-dados-oficina-mecanica',
-                url_web:'',
+                url_web:'https://github.com/Diego-de-Souza/Banco-de-dados-oficina-mecanica',
                 languages: ['SQL'],
                 name:'Banco de dados oficina mecânica',
-                img: '../../../assets/imgs/homePage/portfolio/'
+                img: '../../../assets/imgs/homePage/portfolio/db_oficina.jpg'
             },
             {
                 id: 5,
                 url_git:'https://github.com/Diego-de-Souza/Modelamento_IPhone_Java',
-                url_web:'',
+                url_web:'https://github.com/Diego-de-Souza/Modelamento_IPhone_Java',
                 languages: ['JAVA'],
                 name:'Banco de dados oficina mecânica',
-                img: '../../../assets/imgs/homePage/portfolio/'
+                img: '../../../assets/imgs/homePage/portfolio/banco_phone.png'
             }
         ]
     }
