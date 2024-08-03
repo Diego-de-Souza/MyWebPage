@@ -1,9 +1,22 @@
 @media screen and (max-width: 768px){
+    .container-contato{
+        padding-left: 0em;
+    }
     .header-dekstop{
         display: none;
     }
 
     .header-reponsive{
         display: flex;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container-contato__texto__logo img{
+        width: 32px;
+        height: 32px;
+    }
+    .container-contato__formulario{
+        width: 100%;
     }
 }

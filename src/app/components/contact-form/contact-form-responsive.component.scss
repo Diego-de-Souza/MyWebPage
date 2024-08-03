@@ -1,0 +1,20 @@
+@media screen and (max-width: 480px){
+    .contactForm__content{
+        display: flex;
+        flex-direction: column;
+        height: 5em;
+        width: 80%;
+    }
+    .contactForm__content__input__icon{
+        width: 2em;
+    }
+
+    input, select {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
