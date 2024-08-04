@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import {MAT_DIALOG_DATA, MatDialog, MatDialogModule, MatDialogRef} from '@angular/material/dialog';
+import { CertificatePrint } from '../../model/certificate-model';
 
 @Component({
   selector: 'app-dialog.template',
@@ -13,6 +14,10 @@ import {MAT_DIALOG_DATA, MatDialog, MatDialogModule, MatDialogRef} from '@angula
 })
 export class DialogTemplateComponent {
   readonly dialogRef = inject(MatDialogRef<DialogTemplateComponent>);
-  readonly data = inject<string>(MAT_DIALOG_DATA);
-  readonly certificateName:string = this.data;
+  readonly data = inject<CertificatePrint>(MAT_DIALOG_DATA);
+  readonly certificate:CertificatePrint = this.data;
+
+  constructor(){
+    console.log(this.certificate)
+  }
 }

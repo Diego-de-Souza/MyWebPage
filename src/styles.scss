@@ -67,3 +67,51 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px; 
 }
 
+@font-face {
+  font-family: 'Abril Fatface';
+  src: url('/assets/fonts/abrilFatFace/AbrilFatface-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'exo regular';
+  src: url('/assets/fonts/exo/Exo-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'exo black';
+  src: url('/assets/fonts/exo/Exo-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'exo black italic';
+  src: url('/assets/fonts/exo/Exo-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'exo italic';
+  src: url('/assets/fonts/exo/Exo-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'exo bold italic';
+  src: url('/assets/fonts/exo/Exo-BoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'exo bold';
+  src: url('/assets/fonts/exo/Exo-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}

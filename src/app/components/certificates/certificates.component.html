@@ -7,11 +7,11 @@
             <div class="certificate-home__content__itens row">
                 <div class="certificate-home__content__itens__desc col-sm-8">
                     <h4>{{dadoGeral.formation}}</h4>
-                    <p>data conlusão: {{dadoGeral.data_conclusao}}</p>
+                    <p>data conclusão: {{dadoGeral.data_conclusao}}</p>
                     <p>carga horária: {{dadoGeral.carga_horaria}}</p>
                 </div>
                 <div class="col-sm-4 certificate-home__content__itens__btn">
-                    <button mat-button (click)="openDialog(dadoGeral.formation)">Abrir Imagem</button>
+                    <button mat-button (click)="openDialog(dadoGeral.formation, dadoGeral.imagem)">Abrir Imagem</button>
                 </div>
             </div>
         }

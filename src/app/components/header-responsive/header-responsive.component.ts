@@ -23,6 +23,10 @@ export class HeaderResponsiveComponent {
     this.router.navigate([''])
   }
 
+  openConhecimento(){
+    this.router.navigate(['/conhecimento'])
+  }
+
   openMenu() {
     const alturaMenu = document.querySelector('.headerResponsive');
     if (this.navIcon) {

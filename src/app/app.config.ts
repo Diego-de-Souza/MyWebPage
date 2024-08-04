@@ -6,6 +6,7 @@ import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { InterceptoHttp } from './interceptor/interceptor';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ScrollwindowService } from './service/scrollwindow.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -15,5 +16,6 @@ export const appConfig: ApplicationConfig = {
     HttpClientModule,
     provideHttpClient( withFetch()), provideAnimationsAsync(),
     //{provide: HTTP_INTERCEPTORS, useClass: InterceptoHttp, multi: true}
+    ScrollwindowService
   ]
 };

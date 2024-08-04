@@ -3,5 +3,16 @@ export interface CertificatesModel {
     formation: string,
     carga_horaria: number,
     data_conclusao: string,
-    Imagem: string,
+    imagem: {
+        frente: string,
+        verso: string
+    },
+}
+
+export interface CertificatePrint {
+    formation: string,
+    imagem: {
+        frente: string,
+        verso: string
+    }
 }

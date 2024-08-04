@@ -46,4 +46,8 @@ export class HeaderComponent {
     this.router.navigate([''])
   }
 
+  openConhecimento(){
+    this.router.navigate(['/conhecimento'])
+  }
+
 }

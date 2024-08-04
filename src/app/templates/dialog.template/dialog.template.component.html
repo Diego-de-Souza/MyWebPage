@@ -1,7 +1,14 @@
-<h2 mat-dialog-title>{{certificateName}}</h2>
-<mat-dialog-content class="mat-typography">
-
-</mat-dialog-content>
-<mat-dialog-actions align="end">
-    <button mat-button mat-dialog-close>Cancel</button>
-  </mat-dialog-actions>
+<section class="templateCertificate">
+  <h2 mat-dialog-title>{{certificate.formation}}</h2>
+  <mat-dialog-content class="mat-typography">
+    @if (certificate.imagem.frente) {
+      <img src="{{certificate.imagem.frente}}" alt="parte da frente do certificado" class="imgcertificate">
+    }
+    @if(certificate.imagem.verso){
+      <img src="{{certificate.imagem.verso}}" alt="parte do verso do certificado" class="imgcertificate">
+    }
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+      <button mat-button mat-dialog-close>Cancel</button>
+    </mat-dialog-actions>
+</section>

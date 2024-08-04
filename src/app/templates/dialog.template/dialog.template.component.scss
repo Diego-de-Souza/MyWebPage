@@ -1,0 +1,19 @@
+.mat-dialog-container {
+    max-width: 80vw !important; // Define a largura máxima do modal como 80% da tela
+    width: 80vw !important;     // Define a largura do modal como 80% da tela
+  }
+
+  .imgcertificate {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cdk-overlay-pane.mat-mdc-dialog-panel {
+    max-width: none !important;
+    
+  }
+
+  .mat-typography{
+    display: flex;
+    flex-direction: column;
+  }

@@ -52,9 +52,15 @@ export class CertificatesComponent implements OnInit{
     }
   }
 
-  openDialog(certificateName:string){
+  openDialog(formation:string, imagem: { frente: string; verso: string }){
+    const dados={
+      formation: formation,
+      imagem: imagem
+    }
     const dialogRef = this.dialog.open(DialogTemplateComponent, {
-      data:certificateName
+      data:dados,
+      width: '80vw',
+      maxWidth: '80vw'
     });
 
     dialogRef.afterClosed().subscribe(result => {
