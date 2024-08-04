@@ -1,14 +1,28 @@
 .rotatingLogo{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
-    animation: deslocar 4s linear 1;
+    -webkit-animation: deslocar 4s linear 1;
+            animation: deslocar 4s linear 1;
     right: 60%;    
     top: 55%;
 }
 
 .rotatingLogo__img{
-    animation: girar 20s linear 1;
+    -webkit-animation: girar 20s linear 1;
+            animation: girar 20s linear 1;
+    -webkit-transition: ease;
+    -o-transition: ease;
     transition: ease;
+}
+
+@-webkit-keyframes deslocar{
+    0%{right: 0%; }
+    25%{right: 15%;}
+    50%{right: 30%;}
+    75%{right: 45%;}
+    100%{right: 60%;}
 }
 
 @keyframes deslocar{
@@ -19,10 +33,18 @@
     100%{right: 60%;}
 }
 
+@-webkit-keyframes girar{
+    0%{-webkit-transform: rotateZ(360deg);transform: rotateZ(360deg);}
+    25%{-webkit-transform: rotateZ(170deg);transform: rotateZ(170deg);}
+    50%{-webkit-transform: rotateZ(180deg);transform: rotateZ(180deg);}
+    75%{-webkit-transform: rotateZ(90deg);transform: rotateZ(90deg);}
+    100%{-webkit-transform: rotateZ(0deg);transform: rotateZ(0deg);}
+}
+
 @keyframes girar{
-    0%{transform: rotateZ(360deg);}
-    25%{transform: rotateZ(170deg);}
-    50%{transform: rotateZ(180deg);}
-    75%{transform: rotateZ(90deg);}
-    100%{transform: rotateZ(0deg);}
+    0%{-webkit-transform: rotateZ(360deg);transform: rotateZ(360deg);}
+    25%{-webkit-transform: rotateZ(170deg);transform: rotateZ(170deg);}
+    50%{-webkit-transform: rotateZ(180deg);transform: rotateZ(180deg);}
+    75%{-webkit-transform: rotateZ(90deg);transform: rotateZ(90deg);}
+    100%{-webkit-transform: rotateZ(0deg);transform: rotateZ(0deg);}
 }

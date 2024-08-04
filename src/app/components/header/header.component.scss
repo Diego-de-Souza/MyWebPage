@@ -7,51 +7,102 @@ $colorOuro: #FFD700;
     height: 100vh;
     position: fixed;
     overflow: hidden;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
     transition: 2s;
     z-index: 10000;
 
     .header-fixo__container-logo{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin: 1em 0px 2em 0px;
 
         &:hover{
-            animation-name: giro-constante;
-            animation-duration: 0.5s;
-            animation-iteration-count: infinite;
+            -webkit-animation-name: giro-constante;
+                    animation-name: giro-constante;
+            -webkit-animation-duration: 0.5s;
+                    animation-duration: 0.5s;
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+        }
+
+        @-webkit-keyframes giro-constante {
+            0%{
+                -webkit-transform: rotateZ(0deg);
+                        transform: rotateZ(0deg);
+            }
+            25%{
+                -webkit-transform: rotateZ(90deg);
+                        transform: rotateZ(90deg);
+            }
+            50% {
+                -webkit-transform: rotateZ(180deg);
+                        transform: rotateZ(180deg);
+            }
+            75%{
+                -webkit-transform: rotateZ(270deg);
+                        transform: rotateZ(270deg);
+            }
+            100%{
+                -webkit-transform: rotateZ(360deg);
+                        transform: rotateZ(360deg);
+            }
         }
 
         @keyframes giro-constante {
             0%{
-                transform: rotateZ(0deg);
+                -webkit-transform: rotateZ(0deg);
+                        transform: rotateZ(0deg);
             }
             25%{
-                transform: rotateZ(90deg);
+                -webkit-transform: rotateZ(90deg);
+                        transform: rotateZ(90deg);
             }
             50% {
-                transform: rotateZ(180deg);
+                -webkit-transform: rotateZ(180deg);
+                        transform: rotateZ(180deg);
             }
             75%{
-                transform: rotateZ(270deg);
+                -webkit-transform: rotateZ(270deg);
+                        transform: rotateZ(270deg);
             }
             100%{
-                transform: rotateZ(360deg);
+                -webkit-transform: rotateZ(360deg);
+                        transform: rotateZ(360deg);
             }
         }
         
     }
 
     #link-pages{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding-left: 0px;
 
         .link-pages__li{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             padding: 0.5em 0px 0.5em 1em;
             cursor: pointer;
 
@@ -84,28 +135,52 @@ $colorOuro: #FFD700;
         display: block;
         width: 90%;
         border: 0.5px solid $colorVerde;
-        box-shadow: 1px 1px 4px $colorVerde;
+        -webkit-box-shadow: 1px 1px 4px $colorVerde;
+                box-shadow: 1px 1px 4px $colorVerde;
         margin: 0em auto 2em auto;
     }
     
     #link-user{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding-left: 0px;
         margin: 0px;
 
         .link-user__redes{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             padding: 0.5em 0px 0.5em 1em;
 
             .link-user__redes__link{
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                align-items: center;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                        flex-direction: row;
+                -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                        justify-content: flex-start;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
                 text-decoration: none;
                 color: #fff;
                 height: 32px;
@@ -113,7 +188,8 @@ $colorOuro: #FFD700;
 
                 .link-user__redes__icon{
                     width: 32px;
-                    box-shadow: 0px 0px 4px $colorVerde;
+                    -webkit-box-shadow: 0px 0px 4px $colorVerde;
+                            box-shadow: 0px 0px 4px $colorVerde;
                     border-radius: 50%;
                 }
 
@@ -133,9 +209,13 @@ $colorOuro: #FFD700;
     }
 
     .header-fixo__date{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     
 }

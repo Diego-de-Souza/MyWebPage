@@ -1,7 +1,12 @@
 @media screen and (max-width: 480px){
     .contactForm__content{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         height: 5em;
         width: 80%;
     }

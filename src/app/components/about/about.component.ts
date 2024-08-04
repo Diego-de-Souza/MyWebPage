@@ -62,7 +62,6 @@ export class AboutComponent implements OnInit {
       this.largura1 = '0';
       this.opacidade1 = '0';
     }
-    console.log(`Largura da tela: ${this.larguraTela} pixels`);
   }
 
   openImage2(isIntersecting: boolean): void {

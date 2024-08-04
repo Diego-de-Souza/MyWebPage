@@ -1,5 +1,7 @@
 @media screen and (max-width: 480px){
     .rotatingLogo__img{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 92px;
         height: 92px;

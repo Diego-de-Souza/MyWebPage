@@ -5,25 +5,45 @@ $colorRosa: #FD008B;
 $colorMarinho: #171B26;
 
 .skills{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     background-color: #00ff00;
     padding: 2em 0;
 
     .skills__myskills{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
         h2{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             padding: 1em 0px 1em 0px;
             width: 100%;
-            align-items: center;
-            justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
             text-shadow: 0px 0px 4px $colorMarinho;
             opacity: 0;
+            -webkit-transition: opacity 3s ease-in;
+            -o-transition: opacity 3s ease-in;
             transition: opacity 3s ease-in;
             font-family: 'exo black';
         }
@@ -33,8 +53,13 @@ $colorMarinho: #171B26;
         }
 
         .skills__myskills__desc{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: row;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
             width: 90%;
             background-color: #171b2699;
         }
@@ -43,99 +68,146 @@ $colorMarinho: #171B26;
 }
 
 h3{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 2em;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-family: 'exo black italic';
 }
 
 .skills__myskills__desc__left{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 50%;
 
     .entradaAEsquerda{
-        animation: moverEsquerda 3s ease-out;
+        -webkit-animation: moverEsquerda 3s ease-out;
+                animation: moverEsquerda 3s ease-out;
     }
 
     .skills__myskills__desc__left__icons:nth-child(1){
-        animation-delay:0s ;
+        -webkit-animation-delay:0s ;
+                animation-delay:0s ;
     }
     .skills__myskills__desc__left__icons:nth-child(2){
-        animation-delay:0.4s ;
+        -webkit-animation-delay:0.4s ;
+                animation-delay:0.4s ;
     }
     .skills__myskills__desc__left__icons:nth-child(3){
-        animation-delay:0.8s ;
+        -webkit-animation-delay:0.8s ;
+                animation-delay:0.8s ;
     }
     .skills__myskills__desc__left__icons:nth-child(4){
-        animation-delay:1s ;
+        -webkit-animation-delay:1s ;
+                animation-delay:1s ;
     }
     .skills__myskills__desc__left__icons:nth-child(5){
-        animation-delay:1.3s ;
+        -webkit-animation-delay:1.3s ;
+                animation-delay:1.3s ;
     }
     .skills__myskills__desc__left__icons:nth-child(6){
-        animation-delay:1.5s ;
+        -webkit-animation-delay:1.5s ;
+                animation-delay:1.5s ;
     }
     .skills__myskills__desc__left__icons:nth-child(7){
-        animation-delay:2s ;
+        -webkit-animation-delay:2s ;
+                animation-delay:2s ;
     }
     .skills__myskills__desc__left__icons:nth-child(8){
-        animation-delay:2.5s ;
+        -webkit-animation-delay:2.5s ;
+                animation-delay:2.5s ;
     }
     .skills__myskills__desc__left__icons:nth-child(9){
-        animation-delay:3s ;
+        -webkit-animation-delay:3s ;
+                animation-delay:3s ;
     }
 }
 
 .skills__myskills__desc__right{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 50%;
 
     .entradaADireita{
-        animation: moverDireita 3s ease-out;
+        -webkit-animation: moverDireita 3s ease-out;
+                animation: moverDireita 3s ease-out;
     }
 
     .skills__myskills__desc__right__icons:nth-child(1){
-        animation-delay:0s ;
+        -webkit-animation-delay:0s ;
+                animation-delay:0s ;
     }
     .skills__myskills__desc__right__icons:nth-child(2){
-        animation-delay:0.4s ;
+        -webkit-animation-delay:0.4s ;
+                animation-delay:0.4s ;
     }
     .skills__myskills__desc__right__icons:nth-child(3){
-        animation-delay:0.8s ;
+        -webkit-animation-delay:0.8s ;
+                animation-delay:0.8s ;
     }
     .skills__myskills__desc__right__icons:nth-child(4){
-        animation-delay:1s ;
+        -webkit-animation-delay:1s ;
+                animation-delay:1s ;
     }
     .skills__myskills__desc__right__icons:nth-child(5){
-        animation-delay:1.3s ;
+        -webkit-animation-delay:1.3s ;
+                animation-delay:1.3s ;
     }
     .skills__myskills__desc__right__icons:nth-child(6){
-        animation-delay:1.5s ;
+        -webkit-animation-delay:1.5s ;
+                animation-delay:1.5s ;
     }
     .skills__myskills__desc__right__icons:nth-child(7){
-        animation-delay:2s ;
+        -webkit-animation-delay:2s ;
+                animation-delay:2s ;
     }
     .skills__myskills__desc__right__icons:nth-child(8){
-        animation-delay:2.5s ;
+        -webkit-animation-delay:2.5s ;
+                animation-delay:2.5s ;
     }
     .skills__myskills__desc__right__icons:nth-child(9){
-        animation-delay:3s ;
+        -webkit-animation-delay:3s ;
+                animation-delay:3s ;
     }
 }
 
 .skills__myskills__desc__left__icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    background: -webkit-gradient(linear, left top, right top, from(#171b2600), to(#171B26));
+    background: -o-linear-gradient(left, #171b2600 0%, #171B26 100%);
     background: linear-gradient(90deg, #171b2600 0%, #171B26 100%);
     margin: 0px 4em 2em 0px;
     height: 3em;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     .skills__myskills__desc__left__icons__imgLeft{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 40px;
         height: 40px;
@@ -148,15 +220,27 @@ h3{
 }
 
 .skills__myskills__desc__right__icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: -webkit-gradient(linear, left top, right top, from(#171B26),  to(#171b2600));
+    background: -o-linear-gradient(left, #171B26 0%,  #171b2600 100%);
     background: linear-gradient(90deg, #171B26 0%,  #171b2600 100%);
     margin: 0px 0px 2em 4em;
     height: 3em;
-    align-items: center;
-    animation: visualizar 3s ease-in;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-animation: visualizar 3s ease-in;
+            animation: visualizar 3s ease-in;
 
     .skills__myskills__desc__right__icons__imgLeft{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 40px;
         height: 40px;
@@ -168,25 +252,55 @@ h3{
     }
 }
 
-@keyframes moverEsquerda {
+@-webkit-keyframes moverEsquerda {
     from {
       opacity: 0;
-      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
     }
     to {
       opacity: 1;
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+}
+
+@keyframes moverEsquerda {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes moverDireita {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
     }
 }
 
 @keyframes moverDireita {
     from {
       opacity: 0;
-      transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
     }
     to {
       opacity: 1;
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
     }
 }
 

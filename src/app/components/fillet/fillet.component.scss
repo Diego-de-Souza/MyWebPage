@@ -1,21 +1,33 @@
 .filletC{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: #23FF00;
     width: 100%;
     height: 4em;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 2em;
 
     .filletC__circle{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 38px;
         height: 38px;
         background-color: #8911BA;
         border-radius: 50%;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
 
         .filletC_circle__img{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             width: 32px;
             height: 32px;

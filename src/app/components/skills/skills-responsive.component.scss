@@ -25,65 +25,93 @@
     }
 
     .entradaAAparecer {
-        animation: aparecer 3s ease-out;
+        -webkit-animation: aparecer 3s ease-out;
+                animation: aparecer 3s ease-out;
     }
 
     /* Movimento de animação de elementos à esquerda */
     .skills__myskills__desc__left__icons:nth-child(1) {
-        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+                animation-delay: 0s;
     }
     .skills__myskills__desc__left__icons:nth-child(2) {
-        animation-delay: 0.4s;
+        -webkit-animation-delay: 0.4s;
+                animation-delay: 0.4s;
     }
     .skills__myskills__desc__left__icons:nth-child(3) {
-        animation-delay: 0.8s;
+        -webkit-animation-delay: 0.8s;
+                animation-delay: 0.8s;
     }
     .skills__myskills__desc__left__icons:nth-child(4) {
-        animation-delay: 1s;
+        -webkit-animation-delay: 1s;
+                animation-delay: 1s;
     }
     .skills__myskills__desc__left__icons:nth-child(5) {
-        animation-delay: 1.3s;
+        -webkit-animation-delay: 1.3s;
+                animation-delay: 1.3s;
     }
     .skills__myskills__desc__left__icons:nth-child(6) {
-        animation-delay: 1.5s;
+        -webkit-animation-delay: 1.5s;
+                animation-delay: 1.5s;
     }
     .skills__myskills__desc__left__icons:nth-child(7) {
-        animation-delay: 2s;
+        -webkit-animation-delay: 2s;
+                animation-delay: 2s;
     }
     .skills__myskills__desc__left__icons:nth-child(8) {
-        animation-delay: 2.5s;
+        -webkit-animation-delay: 2.5s;
+                animation-delay: 2.5s;
     }
     .skills__myskills__desc__left__icons:nth-child(9) {
-        animation-delay: 3s;
+        -webkit-animation-delay: 3s;
+                animation-delay: 3s;
     }
 
     /* Movimento de animação para elementos à direita */
     .skills__myskills__desc__right__icons:nth-child(1) {
-        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+                animation-delay: 0s;
     }
     .skills__myskills__desc__right__icons:nth-child(2) {
-        animation-delay: 0.4s;
+        -webkit-animation-delay: 0.4s;
+                animation-delay: 0.4s;
     }
     .skills__myskills__desc__right__icons:nth-child(3) {
-        animation-delay: 0.8s;
+        -webkit-animation-delay: 0.8s;
+                animation-delay: 0.8s;
     }
     .skills__myskills__desc__right__icons:nth-child(4) {
-        animation-delay: 1s;
+        -webkit-animation-delay: 1s;
+                animation-delay: 1s;
     }
     .skills__myskills__desc__right__icons:nth-child(5) {
-        animation-delay: 1.3s;
+        -webkit-animation-delay: 1.3s;
+                animation-delay: 1.3s;
     }
     .skills__myskills__desc__right__icons:nth-child(6) {
-        animation-delay: 1.5s;
+        -webkit-animation-delay: 1.5s;
+                animation-delay: 1.5s;
     }
     .skills__myskills__desc__right__icons:nth-child(7) {
-        animation-delay: 2s;
+        -webkit-animation-delay: 2s;
+                animation-delay: 2s;
     }
     .skills__myskills__desc__right__icons:nth-child(8) {
-        animation-delay: 2.5s;
+        -webkit-animation-delay: 2.5s;
+                animation-delay: 2.5s;
     }
     .skills__myskills__desc__right__icons:nth-child(9) {
-        animation-delay: 3s;
+        -webkit-animation-delay: 3s;
+                animation-delay: 3s;
+    }
+
+    @-webkit-keyframes aparecer {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 
     @keyframes aparecer {
