@@ -73,6 +73,14 @@ export const portfolio=  [
                 languages: ['HTML', 'CSS'],
                 name:'projeto-cordel',
                 img: '../../../assets/imgs/homePage/portfolio/cordel.jpg'
+            },
+            {
+                id: 10,
+                url_git: 'https://github.com/Diego-de-Souza/ASPNETCore-LanchesMac',
+                url_web:'https://github.com/Diego-de-Souza/ASPNETCore-LanchesMac',
+                languages: ['CSharp', 'CSS', 'Cshtml'],
+                name: 'Aplicativo de lanches Mac',
+                img:'../../../assets/imgs/homePage/portfolio/lanches_mac.png'
             }
         ]
     },
@@ -81,11 +89,11 @@ export const portfolio=  [
         itens: [
             {
                 id: 1,
-                url_git:'https://github.com/Diego-de-Souza/Modelamento_ofina_mecanica',
-                url_web:'https://github.com/Diego-de-Souza/Modelamento_ofina_mecanica',
-                languages: [],
-                name:'Modelagem de dados oficina mecânica',
-                img: '../../../assets/imgs/homePage/portfolio/mod_mec.jpg'
+                url_git:'https://github.com/Diego-de-Souza/nodeJS_blog_com_painel_administrativo',
+                url_web:'https://github.com/Diego-de-Souza/nodeJS_blog_com_painel_administrativo',
+                languages: ['JavaScript', 'Ejs', 'CSS'],
+                name: 'Blog com painel adminstrativo nodeJs',
+                img:'../../../assets/imgs/homePage/portfolio/blo_adm.png'
             },
             {
                 id: 2,
@@ -118,7 +126,16 @@ export const portfolio=  [
                 languages: ['JAVA'],
                 name:'Banco de dados oficina mecânica',
                 img: '../../../assets/imgs/homePage/portfolio/banco_phone.png'
+            },
+            {
+                id: 6,
+                url_git:'https://github.com/Diego-de-Souza/Modelamento_ofina_mecanica',
+                url_web:'https://github.com/Diego-de-Souza/Modelamento_ofina_mecanica',
+                languages: [],
+                name:'Modelagem de dados oficina mecânica',
+                img: '../../../assets/imgs/homePage/portfolio/mod_mec.jpg'
             }
+            
         ]
     }
 ]
